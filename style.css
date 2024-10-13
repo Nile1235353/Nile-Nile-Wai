@@ -237,6 +237,7 @@ body h1 h4 {
     background-color: #fff;
     padding: 50px;
     display: grid;
+    grid-gap: 2em;
     grid-template-columns: 60% 40%;
     grid-template-rows: 100%;
     grid-template-areas: 
@@ -284,6 +285,93 @@ body h1 h4 {
 .hide_content_left_div_menu_CSS {
     border-radius: 20px;
     padding: 10px;
+}
+
+.content_right_div {
+    font-size: 20px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "content_right_div_title content_right_div_title"
+    "content_right_div_jobs content_right_div_jobs_1"
+    "content_right_div_skills content_right_div_skills_1"
+    "content_right_div_button content_right_div_button"
+    ;
+}
+
+.content_right_div_title {
+    text-align: center;
+    padding: 10px;
+    grid-area: content_right_div_title;
+}
+
+.content_right_div_jobs {
+    grid-area: content_right_div_jobs;
+}
+
+.content_right_div_jobs_1 {
+    grid-area: content_right_div_jobs_1;
+}
+
+.content_right_div_jobs li{
+    list-style: none;
+}
+
+.content_right_div_jobs_1 li{
+    list-style: none;
+}
+
+.content_right_div_skills {
+    grid-area: content_right_div_skills;
+}
+
+.content_right_div_skills li {
+    list-style: none;
+}
+
+.content_right_div_skills_1 {
+    grid-area: content_right_div_skills_1;
+}
+
+.content_right_div_skills_1 li {
+    list-style: none;
+}
+
+.content_right_div_button {
+    grid-area: content_right_div_button;
+    margin-top: 10px;
+}
+
+.content_right_div_button{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30%;
+    grid-template-areas: 
+    "Contact Contact"
+    "contact_button contact_button_1"
+    ;
+}
+
+.content_right_div_button h3 {
+    text-align: center;
+    align-items: center;
+}
+
+.Contact {
+    grid-area: Contact;
+}
+
+.contact_button {
+    grid-area: contact_button;
+}
+
+.contact_button_1 {
+    grid-area: contact_button_1;
 }
 
 @media only screen and (max-width:1300px){
