@@ -1,0 +1,54 @@
+.carousel-inner img {
+      width: 100%;
+      height: auto;
+    }
+
+    .social-icons a.dribbble:hover {
+      background-color: #ea4c89;
+    }
+
+    .navbar-nav .nav-link.cart {
+      position: relative;
+    }
+
+    .navbar-nav .nav-link.cart .badge {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: red;
+      color: white;
+    }
+
+    .fa-shopping-cart {
+      font-size: 24px;
+      color: white;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    @media (max-width: 767px) {
+      .navbar-brand img {
+        width: 50px;
+      }
+
+      .social-icons li.title {
+        display: block;
+        font-weight: 600;
+      }
+
+      .event-description {
+        text-align: left;
+      }
+
+      .center h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .center h2 {
+        font-size: 1.25rem;
+      }
+    }

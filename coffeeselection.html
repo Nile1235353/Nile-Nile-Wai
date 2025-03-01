@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Bean Boutique</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="coffee.css">
+</head>
+<body class="bg-light gray">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <a class="navbar-brand" href="#"></a>
+  <img src="CoffeeLogo/logo2.jpg" alt="logo" style="width:60px">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Category</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="coffeeselection.html">Coffee Selection</a>
+            <a class="dropdown-item" href="brewingequipment.html">Brewing Equipment</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Events and Workshops</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="register.html">Register</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="review.html">Review</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="special.html">Special Offers and Subscriptions</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link cart" href="home.html" data-toggle="modal" data-target="#cartModal">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="badge badge-pill badge-danger" id="cart-count">0</span>
+          </a>
+        </li>           
+      </ul>
+    </div>  
+  </nav>
+  <br>
+    <input type="text" id="searchInput" placeholder="Search.....">
+  <div id="container"></div>
+  <br>
+  <div class="center">
+    <h4>Available Menu For Cofee Bean</h4>
+  </div>
+  <div class="card-deck mt-5 ml-3 mr-3">
+    <div class="card">
+      <img class="card-img-top" src="CoffeeBeans/coffeebean1.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Arabica(Coffee arabica)</h5>
+        <p class="card-text">Price: $18.00 per bag (12 oz)<br><br>
+          The most popular type of coffee bean, known for its smooth, mild flavor and higher acidity. It typically has a wide range of flavor notes, including fruit, sugar, and chocolate.</p>
+        <button class="btn btn-primary add-to-cart" data-name="Arabica(Coffee arabica)" data-price="3">Add to Cart</button><br>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  <div class="card">
+    <img class="card-img-top" src="CoffeeBeans/coffeebean2.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Robusta(Coffee canephora)</h5>
+      <p class="card-text">Price: $12.00 per bag (12 oz)<br><br>
+        Characterized by its strong, bold taste and higher caffeine content. Robusta is often used in espresso blends for added crema and body.</p>
+      <button class="btn btn-primary add-to-cart" data-name="Robusta(Coffee canephora)" data-price="3">Add to Cart</button><br>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="CoffeeBeans/coffeebean3.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Brazilian Bliss</h5>
+      <p class="card-text">Price: $20.00 per bag (12 oz)<br><br>
+        Mild and mellow, with a pleasant aftertaste.</p>
+      <button class="btn btn-primary add-to-cart" data-name="Brazilian Bliss" data-price="3">Add to Cart</button><br>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <br>
+  </div>
+  <div class="card-deck mt-5 ml-3 mr-3">
+    <div class="card">
+      <img class="card-img-top" src="CoffeeBeans/coffeebean4.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Excelsa</h5>
+        <p class="card-text">Price: $18.00 per bag (12 oz)<br><br>
+          Often considered a subtype of Liberica, Excelsa has a fruity and tart flavor profile. It's mostly grown in Southeast Asia and is used to enhance blends.</p>
+        <button class="btn btn-primary add-to-cart" data-name="Excelsa" data-price="3">Add to Cart</button><br>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  <div class="card">
+    <img class="card-img-top" src="CoffeeBeans/coffeebean5.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Geisha(Coffe eugenioides)</h5>
+      <p class="card-text">Price: $28.00 per bag (12 oz)<br><br>
+        Originally from Ethiopia, this rare and expensive bean is known for its floral aroma and vibrant acidity. It gained fame through specialty coffee competitions.</p>
+      <button class="btn btn-primary add-to-cart" data-name="Geisha(Coffe eugenioides)" data-price="3">Add to Cart</button><br>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="CoffeeBeans/coffeebean6.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Indonesian Delight</h5>
+      <p class="card-text">Price: $10.00 per bag (12 oz)<br><br>
+        Bold and full-bodied, with a smooth finish and a touch of bitterness</p>
+      <button class="btn btn-primary add-to-cart" data-name="Indonesian Delight" data-price="3">Add to Cart</button><br>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  </div>
+  <br>
+  <div class="card-deck mt-5 ml-3 mr-3">
+    <div class="card">
+      <img class="card-img-top" src="CoffeeBeans/coffeebean7.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Typica</h5>
+        <p class="card-text">Price: $8.00 per bag (12 oz)<br><br>
+          Another Arabica cultivar, Typica has a balanced flavor profile with good acidity and sweetness. It is one of the oldest coffee varieties.</p>
+        <button class="btn btn-primary add-to-cart" data-name="Typica" data-price="3">Add to Cart</button><br>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  <div class="card">
+    <img class="card-img-top" src="CoffeeBeans/coffeebean8.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Caturra</h5>
+      <p class="card-text">Price: $11.00 per bag (12 oz)<br><br>
+        A mutation of Bourbon, Caturra is known for its bright acidity and rich flavor. It is a compact plant, making it easier to harvest.</p>
+      <button class="btn btn-primary add-to-cart" data-name="Caturra" data-price="3">Add to Cart</button><br>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="CoffeeBeans/coffeebean9.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Dark Roast Blend</h5>
+      <p class="card-text">Price: $13.00 per bag (12 oz)<br><br>
+        Intense chocolate and caramel notes with a low acidity.</p>
+      <button class="btn btn-primary add-to-cart" data-name="Dark Roast Blend" data-price="3">Add to Cart</button><br>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  </div>
+  <br>
+  <br>
+    <!-- Cart Modal -->
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul id="cart-items" class="list-group">
+            <!-- Cart items will be dynamically added here -->
+          </ul>
+          <p class="text-right mt-2">Total: $<span id="cart-total">0</span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid my-5">
+  <footer class="text-white text-center text-lg-start bg-dark">
+  <div class="container p-4">
+    <div class="row mt-4">
+      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">About company</h5>
+        <p>
+          Welcome from our Bean Boutique.
+        </p>
+        <p>
+          You can try a lots of beans.
+        </p>
+        <div class="mt-4">
+          <button class="btn btn-floating btn-primary btn-lg"><i class="fab fa-facebook-f"></i></button>
+          <button class="btn btn-floating btn-primary btn-lg"><i class="fab fa-dribbble"></i></button>
+          <button class="btn btn-floating btn-primary btn-lg"><i class="fab fa-twitter"></i></button>
+          <button class="btn btn-floating btn-primary btn-lg"><i class="fab fa-google-plus-g"></i></button>
+      </div>
+      <div class="col-12 col-md-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+        <div class="form-outline form-white mb-4">
+          <input type="text" id="formControlLg" class="form-control form-control-lg">
+          <label class="form-label" for="formControlLg">Search</label>
+        </div>
+        <ul class="fa-ul" style="margin-left: 1.65em;">
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-home"></i></span>
+            <span class="ms-2">New York, NY 10012, US</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-envelope"></i></span>
+            <span class="ms-2">info@example.com</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-phone"></i></span>
+            <span class="ms-2">+ 01 234 567 88</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-print"></i></span>
+            <span class="ms-2">+ 01 234 567 89</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Opening hours</h5>
+  
+        <table class="table text-center text-white">
+          <tbody class="font-weight-normal">
+            <tr>
+              <td>Mon - Fri:</td>
+              <td>8am - 9pm</td>
+            </tr>
+            <tr>
+              <td>Fri - Sat:</td>
+              <td>9am - 9pm</td>
+            </tr>
+            <tr>
+              <td>Sunday:</td>
+              <td>10am - 10pm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+    <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">BeanBotique.com</a>
+  </div>
+    <!-- Copyright -->
+  </footer>
+  <script>
+  const cart = [];
+  const cartCountElement = document.getElementById('cart-count');
+  const cartItemsElement = document.getElementById('cart-items');
+  const cartTotalElement = document.getElementById('cart-total');
+
+  function updateCart() {
+    cartCountElement.textContent = cart.length;
+    cartItemsElement.innerHTML = '';
+    let total = 0;
+    cart.forEach((item) => {
+      const li = document.createElement('li');
+      li.classList.add('list-group-item');
+      li.textContent = `${item.name} - $${item.price}`;
+      cartItemsElement.appendChild(li);
+      total += parseFloat(item.price);
+    });
+    cartTotalElement.textContent = total.toFixed(2);
+  }
+
+  // Add event listeners to "Add to Cart" buttons
+  document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function() {
+      const name = this.getAttribute('data-name');
+      const price = this.getAttribute('data-price');
+      cart.push({ name, price: parseFloat(price) });
+      updateCart();
+    });
+  });
+
+  // Search functionality
+  document.getElementById('searchInput').addEventListener('input', function() {
+    const searchValue = this.value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+      const title = card.querySelector('h5').textContent.toLowerCase();
+      card.style.display = title.includes(searchValue) ? '' : 'none';
+    });
+  });
+</script>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

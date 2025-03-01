@@ -1,0 +1,134 @@
+/* Make the carousel images responsive */
+.carousel-inner img {
+  width: 100%;
+  height: auto;
+}
+
+/* Font size for the shopping cart icon */
+.fa-shopping-cart {
+  font-size: 24px;
+  color: white;
+}
+
+/* Social media icons responsive adjustment */
+.social-icons a.dribbble:hover {
+  background-color: #ea4c89;
+}
+
+@media(max-width: 767px) {
+  /* Adjust the navbar items on smaller screens */
+  .navbar-nav .nav-link.cart {
+    position: relative;
+  }
+  
+  /* Make the shopping cart badge position relative and adjust it for mobile */
+  .navbar-nav .nav-link.cart .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    color: white;
+  }
+  .center {
+    text-align: center;
+  }
+
+  /* Search input field adjustments */
+  #searchInput {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Adjust modal for mobile */
+  .modal-dialog.modal-sm {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  /* Make cards stack vertically on smaller screens */
+  .card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    flex: 1 0 100%;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Adjust text for smaller devices */
+  .carousel-caption h3,
+  .carousel-caption p {
+    font-size: 18px;
+  }
+
+  /* Adjust footer layout on smaller screens */
+  footer {
+    font-size: 14px;
+    padding: 20px 0;
+  }
+
+  .container-fluid.my-5 {
+    padding: 0;
+  }
+
+  /* Ensure proper margin on smaller screens */
+  .card-body {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+  
+  /* Adjust the social icons at the bottom */
+  .social-icons {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .social-icons a {
+    margin: 5px;
+    font-size: 24px;
+  }
+
+  .social-icons a.btn-primary {
+    color: white;
+    background-color: #3b5998; /* Facebook Blue */
+  }
+
+  .social-icons a.btn-twitter {
+    color: white;
+    background-color: #55acee; /* Twitter Blue */
+  }
+
+  .social-icons a.btn-google-plus {
+    color: white;
+    background-color: #dd4b39; /* Google Plus */
+  }
+  
+  .social-icons a.btn-dribbble {
+    color: white;
+    background-color: #ea4c89; /* Dribbble Pink */
+  }
+}
+
+/* Larger screen (above 768px) behavior */
+@media(min-width: 768px) {
+  /* Make sure cards are displayed in row on larger screens */
+  .card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    flex: 1 0 32%;
+    max-width: 32%;
+  }
+}
+

@@ -1,0 +1,340 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>Bean Boutique</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="brewing.css">
+</head> 
+<body class="bg-light gray">
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="#"></a>
+    <img src="CoffeeLogo/logo2.jpg" alt="logo" style="width:60px">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Category</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="coffeeselection.html">Coffee Selection</a>
+            <a class="dropdown-item" href="brewingequipment.html">Brewing Equipment</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="events.html">Events and Workshops</a>
+        </li>   
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About us</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="register.html">Register</a>
+        </li> 
+        <li class="nav-item">
+          <a class="nav-link" href="review.html">Review</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="special.html">Special Offers and Subscriptions</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link cart" href="home.html" data-toggle="modal" data-target="#cartModal">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="badge badge-pill badge-danger" id="cart-count">0</span>
+          </a>
+        </li>           
+      </ul>       
+    </div>  
+  </nav>
+  <br>
+    <input type="text" id="searchInput" placeholder="Search.....">
+  <div class="container"></div>
+  <br>
+  <div class="center">
+    <h4>Available Menu For Brewing Equipment</h4>
+  </div>
+  <div class="card-deck mt-5 ml-3 mr-3">
+    <div class="card">
+      <img class="card-img-top" src="BrewingEquipment/coffeeequ1.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Espresso Machine</h5>
+        <p class="card-text">Price: $150 - $500 (depending on size and material).<br>
+          <b>Description:</b> Espresso machines use high pressure to force hot water through finely ground coffee beans, creating a concentrated shot of espresso.<br>
+          <b>Usage Tips:</b>
+          Grind size: Use a fine grind for espresso.<br>
+          Tamperessure: Apply even pressure when tamping the coffee grounds.<br>
+          <b>Water temperature:</b> Use hot water, but not boiling, for optimal extraction.<br>
+          <b>Extraction time:</b> Aim for a shot time of 20-30 seconds.
+        </p>
+          <button class="btn btn-primary add-to-cart" data-name="Espresso Machine" data-price="3">Add to Cart</button><br>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  <div class="card">
+    <img class="card-img-top" src="BrewingEquipment/coffeeequ9.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Pour-Over Kettle</h5>
+      <p class="card-text">Price: $150 - $500 (depending on size and material).<br>
+        <b>Description:</b> A kettle designed for pouring hot water over coffee grounds   in a pour-over cone.<br>
+        <b>Usage Tips:</b>
+        <b>Water temperature:</b> Use water that is just off the boil (around 200°F or 93°C).<br>
+        <b>Pouring technique:</b> Pour the water in a circular motion, ensuring even saturation of the grounds.<br>
+        <b>Grind size:</b> Use a medium-coarse grind for pour-over.<br>
+        <b>Bloom:</b> Allow the grounds to bloom for 30 seconds before pouring the rest of the water.<br>
+      </p>
+        <button class="btn btn-primary add-to-cart" data-name="Pour-Over Kettle" data-price="3">Add to Cart</button><br>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="BrewingEquipment/coffeeequ4.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Mash Tun</h5>
+      <p class="card-text">Price: $150 - $500 (depending on size and material).<br>
+        <b>Description:</b> A vessel designed for mashing grains, often insulated to maintain temperature.<br>
+        <b>Usage:</b> Used to mix crushed grains with hot water to convert starches to sugars.<br>
+      </p>
+        <button class="btn btn-primary add-to-cart" data-name="Mash Tun" data-price="3">Add to Cart</button><br>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <br>
+  </div>
+  <div class="card-deck mt-5 ml-3 mr-3">
+    <div class="card">
+      <img class="card-img-top" src="BrewingEquipment/coffeeequ10.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">French Press</h5>
+        <p class="card-text">Price: $150 - $500 (depending on size and material).<br>
+          <b>Description:</b> A coffee maker that uses a plunger to press the coffee grounds down, separating the brewed coffee from the grounds.<br>
+          <b>Usage Tips:</b>
+          <b>Grind size:</b> Use a coarse grind for French press.<br>
+          <b>Steeping time:</b> Steep the coffee grounds for 3-4 minutes.<br>
+          <b>Plunging:</b> Press the plunger slowly and evenly to avoid disturbing the grounds.<br>
+          <b>Cleaning:</b> Clean the French press immediately after use to prevent coffee residue buildup.
+        </p>
+          <button class="btn btn-primary add-to-cart" data-name="French Press" data-price="3">Add to Cart</button><br>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  <div class="card">
+    <img class="card-img-top" src="BrewingEquipment/coffeeequ5.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Chemex</h5>
+      <p class="card-text">Price: $150 - $500(depending on size and material).<br>
+        <b>Description:</b> A glass coffee maker with a wooden collar that uses gravity to filter coffee.<br>
+        <b>Usage Tips:</b>
+        <b>Filter:</b> Use a paper filter specifically designed for Chemex.<br>
+        <b>Water temperature:</b> Use water that is just off the boil.<br>
+        <b>Pouring technique:</b> Pour the water in a circular motion, ensuring even saturation of the grounds.<br>
+        <b>Steeping time:</b> Steep the coffee grounds for 3-4 minutes.
+      </p>
+        <button class="btn btn-primary add-to-cart" data-name="Chemex" data-price="3">Add to Cart</button><br>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="BrewingEquipment/coffeeequ7.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Cold Brew Maker</h5>
+      <p class="card-text">Price: $150 - $500 (depending on size and material).<br>
+        <b>Description:</b> A container used to make cold brew coffee by steeping coffee grounds in cold water for an extended period.<br>
+        <b>Usage Tips:</b>
+        <b>Grind size:</b> Use a coarse grind for cold brew.<br>
+        <b>Steeping time:</b> Steep the coffee grounds for 12-24 hours.<br>
+        <b>Filtering:</b> Filter the cold brew through a fine-mesh filter.<br>
+        <b>Dilution:</b> Dilute the cold brew with water or milk to your desired taste.
+      </p>
+        <button class="btn btn-primary add-to-cart" data-name="Cold Brew Maker" data-price="3">Add to Cart</button><br>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  </div>
+  <br>
+  <div class="card-deck mt-5 ml-3 mr-3">
+    <div class="card">
+      <img class="card-img-top" src="BrewingEquipment/coffeeequ8.jpg" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Chiller</h5>
+        <p class="card-text">Price: $50 - $300 (depending on size and material).<br>
+          <b>Description:</b> A device that rapidly cools boiled wort to fermentation temperatures.<br>
+          <b>Usage:</b> Essential for preventing contamination and ensuring a quick temperature drop.
+        </p>
+          <button class="btn btn-primary add-to-cart" data-name="Chiller" data-price="3">Add to Cart</button><br>
+        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  <div class="card">
+    <img class="card-img-top" src="BrewingEquipment/coffeeequ12.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Boil Kettle</h5>
+      <p class="card-text">Price: $150 - $500 (depending on size and material).<br>
+        <b>Description:</b> A large pot for boiling wort, usually made of stainless steel.<hr>
+        <b>Usage:</b> Used to boil the wort and add hops for flavor and aroma.
+        <button class="btn btn-primary add-to-cart" data-name="Boil Kettle" data-price="3">Add to Cart</button><br>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+      </p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="BrewingEquipment/coffeeequ13.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Sanitizing Equipment</h5>
+      <p class="card-text">Price: $10 - $50 (for chemicals and tools).<br>
+        <b>Description:</b> Includes sanitizing solutions and sprayers for cleaning equipment.<br>
+        <b>Usage:</b> Ensures all equipment is sanitized to prevent contamination.
+      </p>
+        <button class="btn btn-primary add-to-cart" data-name="Sanitizing Equipment" data-price="3">Add to Cart</button><br>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  </div>
+  <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul id="cart-items" class="list-group">
+          </ul>
+          <p class="text-right mt-2">Total: $<span id="cart-total">0</span></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+  <br><br>
+  <div class="container-fluid my-5">
+  <footer class="text-white text-center text-lg-start bg-dark">
+  <div class="container p-4"> 
+    <div class="row mt-4">
+      <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">About company</h5>
+        <p>
+          Welcome from our Bean Boutique.
+        </p>
+        <p>
+          You can try a lots of beans.
+        </p>
+        <div class="mt-4">
+          <a class="btn btn-floating btn-primary btn-lg"><i class="fab fa-facebook-f"></i></a>
+          <a class="btn btn-floating btn-primary btn-lg"><i class="fab fa-dribbble"></i></a>
+          <a class="btn btn-floating btn-primary btn-lg"><i class="fab fa-twitter"></i></a>
+          <a class="btn btn-floating btn-primary btn-lg"><i class="fab fa-google-plus-g"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4 pb-1">Search something</h5>
+  
+        <div class="form-outline form-white mb-4">
+          <input type="text" id="formControlLg" class="form-control form-control-lg">
+          <label class="form-label" for="formControlLg">Search</label>
+        </div>
+  
+        <ul class="fa-ul" style="margin-left: 1.65em;">
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-home"></i></span>
+            <span class="ms-2">New York, NY 10012, US</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-envelope"></i></span>
+            <span class="ms-2">info@example.com</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-phone"></i></span>
+            <span class="ms-2">+ 01 234 567 88</span>
+          </li>
+          <li class="mb-3">
+            <span class="fa-li"><i class="fas fa-print"></i></span>
+            <span class="ms-2">+ 01 234 567 89</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase mb-4">Opening hours</h5>
+        <table class="table text-center text-white">
+          <tbody class="font-weight-normal">
+            <tr>
+              <td>Mon - Fri:</td>
+              <td>8am - 9pm</td>
+            </tr>
+            <tr>
+              <td>Fri - Sat:</td>
+              <td>9am - 9pm</td>
+            </tr>
+            <tr>
+              <td>Sunday:</td>
+              <td>10am - 10pm</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">BeanBotique.com</a>
+  </div>
+  </footer>
+  <script>
+  const cart = [];
+  const cartCountElement = document.getElementById('cart-count');
+  const cartItemsElement = document.getElementById('cart-items');
+  const cartTotalElement = document.getElementById('cart-total');
+
+  function updateCart() {
+    cartCountElement.textContent = cart.length;
+    cartItemsElement.innerHTML = '';
+    let total = 0;
+    cart.forEach((item) => {
+      const li = document.createElement('li');
+      li.classList.add('list-group-item');
+      li.textContent = `${item.name} - $${item.price}`;
+      cartItemsElement.appendChild(li);
+      total += parseFloat(item.price);
+    });
+    cartTotalElement.textContent = total.toFixed(2);
+  }
+
+  // Add event listeners to "Add to Cart" buttons
+  document.querySelectorAll('.add-to-cart').forEach(button => {
+    button.addEventListener('click', function() {
+      const name = this.getAttribute('data-name');
+      const price = this.getAttribute('data-price');
+      cart.push({ name, price: parseFloat(price) });
+      updateCart();
+    });
+  });
+
+  // Search functionality
+  document.getElementById('searchInput').addEventListener('input', function() {
+    const searchValue = this.value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+      const title = card.querySelector('h5').textContent.toLowerCase();
+      card.style.display = title.includes(searchValue) ? '' : 'none';
+    });
+  });
+</script>
+  </div>
+</body>
+</html>
